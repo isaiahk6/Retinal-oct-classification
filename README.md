@@ -31,8 +31,8 @@ Diseases by Image-Based Deep Learning*, Cell, 2018.
 
 | Metric | Value |
 |---|---|
-| Test accuracy | — |
-| Test macro F1 | — |
+| Test accuracy | 96.2% |
+| Test macro F1 | 94.6% |
 
 ![Training curves](results/training_curves.png)
 ![Confusion matrix](results/confusion_matrix.png)
