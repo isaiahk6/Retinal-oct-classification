@@ -12,7 +12,7 @@ classify scans into the 4 categories above.
 
 ## Dataset
 
-[Kermany et al. OCT2017](https://www.kaggle.com/datasets/paultimothymooney/kermany2018) — ~84,000 labeled
+[Kermany et al. OCT2017](https://www.kaggle.com/datasets/paultimothymooney/kermany2018): ~84,000 labeled
 OCT images, sourced from Kermany DS, Goldbaum M, et al., *Identifying Medical Diagnoses and Treatable
 Diseases by Image-Based Deep Learning*, Cell, 2018.
 
@@ -22,10 +22,10 @@ Diseases by Image-Based Deep Learning*, Cell, 2018.
   global average pooling, and a dropout-regularized classifier head. ~1.5M parameters, trained from random
   initialization.
 - Class-weighted cross-entropy loss to correct for the dataset's class imbalance.
-- Mild augmentation (small rotations/translations, brightness/contrast jitter) — no flips, since OCT
+- Mild augmentation (small rotations/translations, brightness/contrast jitter). No flips, since OCT
   scans have a consistent anatomical orientation.
 - 80/10/10 train/val/test split carved from the training set (the provided Kaggle test split is too small
-  — ~32 images/class — for reliable evaluation).
+  — ~32 images/class: for reliable evaluation).
 
 ## Results
 
@@ -35,7 +35,7 @@ Diseases by Image-Based Deep Learning*, Cell, 2018.
 | Test macro F1 | 94.6% |
 
 DRUSEN was the hardest class to classify (88.3% F1), consistent with it having the fewest training
-examples (850 vs. 3688 for CNV) — the class-weighted loss helped narrow this gap but didn't fully close it.
+examples (850 vs. 3688 for CNV), the class-weighted loss helped narrow this gap but didn't fully close it.
 
 ![Training curves](results/training_curves.png)
 ![Confusion matrix](results/confusion_matrix.png)
