@@ -34,6 +34,9 @@ Diseases by Image-Based Deep Learning*, Cell, 2018.
 | Test accuracy | 96.2% |
 | Test macro F1 | 94.6% |
 
+DRUSEN was the hardest class to classify (88.3% F1), consistent with it having the fewest training
+examples (850 vs. 3688 for CNV) — the class-weighted loss helped narrow this gap but didn't fully close it.
+
 ![Training curves](results/training_curves.png)
 ![Confusion matrix](results/confusion_matrix.png)
 ![Sample predictions](results/sample_predictions.png)
